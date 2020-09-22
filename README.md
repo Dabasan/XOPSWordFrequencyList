@@ -2,7 +2,7 @@
 
 XOPSのアドオンに出現する単語を頻度順に並べてみました。
 
-頻度リスト: [result.csv](./result.csv)
+頻度リスト: [result.tsv](./result.tsv)
 
 # 処理の手順
 
