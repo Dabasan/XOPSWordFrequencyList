@@ -2,6 +2,8 @@
 
 XOPSのアドオンに出現する単語を頻度順に並べてみました。
 
+頻度リスト: [result.csv](./result.csv)
+
 # 処理の手順
 
 ## 生のデータ
@@ -28,11 +30,24 @@ XOPSのアドオンに出現する単語を頻度順に並べてみました。
 | ShiftJIS | 865  | 570  |
 |  CP932   |  12  |  3   |
 
+使用したコード: [pickup_by_encoding.py](./pickup_by_encoding.py)
+
 ## テキストの取得
 
 MIFファイルから93841文字、MSGファイルから128053文字のテキストを取得した。
 
+使用したコード: [concat_text.py](./concat_text.py)
+
 ## 形態素解析
 
 [Kagome](https://github.com/ikawaha/kagome)を使用して形態素解析を行った。
+
+使用したコード: [morph_analysis.go](./morph_analysis.go)
+
+# 作者のコメント
+
+最近のアドオンは解析対象に含まれていない可能性があります。
+
+データが少ないので頻度の低い単語についてはあまり当てにならないと思います。
+上位1000語くらいなら参考になるでしょうか......。
 
